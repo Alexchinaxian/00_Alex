@@ -134,11 +134,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\STM32G0xx_HAL_Driver\Inc;..\Libraries\CMSIS\Include</IncludePath>
+              <IncludePath>..\Libraries\STM32G0xx_HAL_Driver\Inc;..\Libraries\CMSIS\Include;..\Application\inc;..\BSP\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -385,12 +385,29 @@
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Application\main.c</FilePath>
+              <FilePath>..\Application\src\main.c</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
           <GroupName>BSP</GroupName>
+          <Files>
+            <File>
+              <FileName>BSP.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\src\BSP.c</FilePath>
+            </File>
+            <File>
+              <FileName>BSP_CAN.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\src\BSP_CAN.c</FilePath>
+            </File>
+            <File>
+              <FileName>BSP_RCC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\src\BSP_RCC.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Drivers</GroupName>
